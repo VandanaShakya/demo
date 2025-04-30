@@ -41,7 +41,7 @@
 }
 
 .feature-box {
-  background-color: #13c4a1;
+  background: linear-gradient(to bottom right, #f3e9dc 10%, #895737 100%);
   padding: 20px;
   height: 16rem; /* Slightly increased height for better content fit */
   text-align: center;
