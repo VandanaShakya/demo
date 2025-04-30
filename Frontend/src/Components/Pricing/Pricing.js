@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Pricing.module.css";
+import NavBar from "../head/Navbar";
 
 const pricingPlans = [
   {
@@ -47,7 +48,10 @@ const pricingPlans = [
 
 const Pricing = () => {
   return (
-    <section className={styles.pricingSection}>
+   <>
+
+   <NavBar/>
+     <section className={styles.pricingSection}>
       <div className={styles.pricingHeader}>
         <h1>Pricing Plans</h1>
         <p>
@@ -77,6 +81,7 @@ const Pricing = () => {
         ))}
       </div>
     </section>
+   </>
   );
 };
 

@@ -1,0 +1,276 @@
+.appDownloadSection {
+    background: linear-gradient(to bottom, #f3e9dc, #ffffff);
+    padding: 8% 1rem;
+    text-align: center;
+    height: auto;
+  }
+  
+  .header h1 {
+    font-size: 4rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+  }
+  
+  .downloadOptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .optionWeb, .optionMac, .optionWindows, .optionIphone, .optionAndroid {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    animation: webshift 1s ease-in;
+  }
+  .optionMac {
+    animation: macshift 1.1s ease-in;
+  }
+  .optionWindows {
+    animation: windowshift 1.2s ease-in;
+  }
+  .optionIphone {
+    animation: iphoneshift 1.3s ease-in;
+  }
+  .optionAndroid {
+    animation: androidshift 1.5s ease-in;
+  }
+  @keyframes webshift{
+    0%{transform: translateX(1000px);}
+    100%{transform: translateX(0px);}
+  }
+  
+  @keyframes macshift{
+    0%{transform: translateX(1000px);}
+    100%{transform: translateX(0px);}
+  }
+  @keyframes windowshift{
+    0%{transform: translateX(1000px);}
+    100%{transform: translateX(0px);}
+  }
+  @keyframes iphoneshift{
+    0%{transform: translateX(1000px);}
+    100%{transform: translateX(0px);}
+  }
+  @keyframes androidshift{
+    0%{transform: translateX(1000px);}
+    100%{transform: translateX(0px);}
+  }
+  
+  
+  .optionWeb:hover, .optionMac:hover, .optionWindows:hover, .optionIphone:hover, .optionAndroid:hover {
+    transform: translateY(-5px);
+  }
+  
+  .iconWeb, .iconMac, .iconWindows, .iconIphone, .iconAndroid {
+    width: 2rem;
+    height: 2rem;
+    
+  }
+  .web, .mac, .window, .iphone, .android{
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+  }
+  
+  /* Customize colors */
+  .iconMac { background-color: #e0e7ff; }
+  .iconWindows { background-color: #ccfbf1; }
+  .iconIphone { background-color: #fce7f3; }
+  .iconAndroid { background-color: #d1fae5; }
+  
+  .buttonWeb, .buttonMac, .buttonWindows, .buttonIphone, .buttonAndroid {
+    margin-top: 1rem;
+    background: #895737;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .buttonWeb:hover, .buttonMac:hover, .buttonWindows:hover, .buttonIphone:hover, .buttonAndroid:hover {
+    background: #c08552;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .downloadOptions {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* app next section  */
+
+  .exclusiveSection {
+    background-color: #0d0d0d;
+    padding: 4rem 1rem;
+    color: white;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .highlight {
+    color: #d4ff00;
+  }
+  
+  .servicesContainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+  
+  .serviceCard {
+    /* background: #141414; */
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    transition: transform 0.3s ease;
+    animation: slide 0.7s ease-in-out;
+  }
+  @keyframes slide{
+    0% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0px); 
+    }
+    
+  }
+  
+  .serviceCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .imageWrapper {
+    height: auto;
+    width: 30%;
+    border-radius: 12px;
+    margin-top: 2rem;
+  }
+  
+  .image {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    opacity: 0.5;
+  }
+  .image:hover,
+  .image:active{
+    animation: fade 1s ease-in-out;
+    opacity: 1;
+    cursor: grab;
+  }
+  @keyframes fade{
+    0%{
+        transition: transformX(0%);
+    }
+    100%{
+        transition: transformX(100%);
+    }
+  }
+  
+  .textWrapper {
+    height: auto;
+    width: 30%;
+    background-color: #141414;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 12px;
+  }
+  
+  .textContent {
+    max-width: 400px;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+  
+  .textContent h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .textContent p {
+    color: #b0b0b0;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .moreLink {
+    color: #d4ff00;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .moreLink:hover {
+    text-decoration: underline;
+  }
+  
+  /* RESPONSIVE */
+
+  @media(max-width: 992px){
+    .servicesContainer{
+       display: block;
+        width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .servicesContainer {
+      /* display: block;
+      width: 100%; */
+    }
+  
+    .textWrapper {
+      padding: 1.5rem;
+      width: 100%;
+      margin-top: 2rem;
+    }
+  
+    .textContent h2 {
+      font-size: 1.5rem;
+    }
+  
+    .header h1 {
+      font-size: 2rem;
+    }
+    .image{
+        height: 20rem;
+        width: auto;
+    }
+  }
+  @media(max-width: 600px){
+    
+  }
